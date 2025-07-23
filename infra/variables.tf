@@ -13,7 +13,3 @@ variable "docker_image" {
   description = "Nome da imagem Docker a ser usada"
 }
 
-variable "public_key_path" {
-  default     = "./mundo-global-key.pub"
-  description = "Caminho para a chave pública SSH"
-}
