@@ -1,4 +1,4 @@
-output "public_ip" {
-  description = "IP público da instância EC2"
-  value       = aws_instance.app_instance.public_ip
+output "load_balancer_dns" {
+  description = "DNS público do ALB"
+  value       = aws_lb.app_alb.dns_name
 }
