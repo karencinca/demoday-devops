@@ -38,10 +38,7 @@ O resultado: um portal **estável**, **ágil** e pronto para escalar com seguran
 Durante o projeto, utilizamos diversas ferramentas e tecnologias modernas do ecossistema DevOps:
 
 - 🐳 **Docker** – Containerização de aplicações  
-- ⚙️ **Docker Compose** – Orquestração local de múltiplos serviços  
 - 🤖 **GitHub Actions** – Pipeline de CI/CD automatizado  
-- 🔧 **Jenkins** – Automatização de builds e deploys em ambiente controlado  
-- ☸️ **Kubernetes** – Orquestração de contêineres em produção  
 - 📦 **Terraform** – Infraestrutura como Código (IaC)  
 - ☁️ **AWS** – Hospedagem e escalabilidade em nuvem  
 - 💻 **Git** – Controle de versão  
@@ -50,14 +47,23 @@ Durante o projeto, utilizamos diversas ferramentas e tecnologias modernas do eco
 ---
 ## 📁 Estrutura do Projeto
 ```bash
-├── frontend/              # Interface HTML estática
-├── api-saudacao/          # API de saudação
-├── api-nome/              # API que retorna nomes aleatórios
-├── .github/workflows/     # Pipeline CI/CD com GitHub Actions
-├── docker-compose.yml     # Orquestração dos serviços
-├── README.md              # Documentação do projeto
+.
+├── README.md
+├── app
+│   ├── Dockerfile
+│   ├── index.html
+│   └── style.css
+└── infra
+    ├── alb.tf
+    ├── auto-scaling.tf
+    ├── ec2.tf
+    ├── main.tf
+    ├── monitoring.tf
+    ├── network.tf
+    ├── outputs.tf
+    ├── user_data.sh
+    └── variables.tf
 ```
----
 
 ## 🚀 Como Executar o Projeto Localmente
 
